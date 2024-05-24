@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import MealSection from './MealSection';
 import Summary from './Summary';
 import './App.css';
+import axios from 'axios';
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      date: new Date().toISOString().split('T')[0], // Current date in YYYY-MM-DD format
       meals: {
-        meal: [],
-        // lunch: [],
-        // snacks: [],
-        // dinner: []
+        breakfast: [],
+        lunch: [],
+        snacks: [],
+        dinner: []
       },
       nutritionalStandards: {
         calories: 2000,
@@ -32,14 +34,15 @@ class App extends Component {
   }
 
   render() {
-    const { meals, nutritionalStandards } = this.state;
+    const { date, meals, nutritionalStandards } = this.state;
     return (
       <div className="app">
         <h1>Nutrition Tracker</h1>
         <div className="meal-sections">
-          {['meal'].map(mealType => (
+          {['breakfast', 'lunch', 'snacks', 'dinner'].map(mealType => (
             <MealSection
               key={mealType}
+              date={date}
               mealType={mealType}
               items={meals[mealType]}
               addItem={this.addItem}

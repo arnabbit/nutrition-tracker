@@ -9,6 +9,7 @@ class Summary extends Component {
         totals.protein += parseFloat(item.protein);
         totals.carbs += parseFloat(item.carbs);
         totals.fat += parseFloat(item.fat);
+        totals.fiber += parseFloat(item.fiber)
       });
     }
     return totals;
@@ -30,6 +31,7 @@ class Summary extends Component {
         <p>Protein: <span className={this.getStatus(totals.protein, standards.protein)}>{totals.protein}g</span></p>
         <p>Carbs: <span className={this.getStatus(totals.carbs, standards.carbs)}>{totals.carbs}g</span></p>
         <p>Fat: <span className={this.getStatus(totals.fat, standards.fat)}>{totals.fat}g</span></p>
+        <p>Fiber: <span className={this.getStatus(totals.fat, standards.fiber)}>{totals.fiber}g</span></p>
       </div>
     );
   }
