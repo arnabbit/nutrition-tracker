@@ -14,7 +14,7 @@ const nutritionData = [
     { "itemName": "100g Boneless Chicken", "calories": 165, "protein": 31, "carbs": 0, "fat": 3.5, "fiber": 0 },
     { "itemName": "Egg", "calories": 70, "protein": 6, "carbs": 1, "fat": 5, "fiber": 0 },
     { "itemName": "Cup of Cooked Soybeans", "calories": 250, "protein": 29, "carbs": 20, "fat": 13, "fiber": 10 },
-    { "itemName": "Spray of Oil (estimate per tbsp)", "calories": 120, "protein": 0, "carbs": 0, "fat": 14, "fiber": 0 },
+    {"itemName": "1 Spray Vegetable Oil", "calories": 2, "protein": 0, "carbs": 0, "fat": 0.2, "fiber": 0},
     { "itemName": "Cup of Fried Okra", "calories": 175, "protein": 3, "carbs": 15, "fat": 10, "fiber": 4 },
     { "itemName": "Cup of Cauliflower Sabzi", "calories": 200, "protein": 5, "carbs": 10, "fat": 15, "fiber": 4 }, 
     { "itemName": "Cup of Cabbage Sabzi", "calories": 125, "protein": 3, "carbs": 10, "fat": 8, "fiber": 5 },
@@ -22,7 +22,9 @@ const nutritionData = [
     { "itemName": "50g Air-Popped Popcorn", "calories": 150, "protein": 3, "carbs": 30, "fat": 2, "fiber": 4 },
     { "itemName": "Cup of Baked Potato Chips", "calories": 125, "protein": 2, "carbs": 15, "fat": 7, "fiber": 1 }, 
     { "itemName": "Cup of Cooked Mushroom Curry", "calories": 125, "protein": 3, "carbs": 10, "fat": 8, "fiber": 3 } ,
-    {"itemName": "1 Cup Cooked Masur Dal", "calories": 230, "protein": 18, "carbs": 40, "fat": 1, "fiber": 15}    
-]
+    {"itemName": "1 Cup Cooked Masur Dal", "calories": 230, "protein": 18, "carbs": 40, "fat": 1, "fiber": 15},    
+    {"itemName": "1 Glass Sugarcane Juice", "calories": 111, "protein": 0.2, "carbs": 27, "fat": 0, "fiber": 0},
+    {"itemName": "1 Cup Lauki Ki Sabzi", "calories": 120, "protein": 2, "carbs": 18, "fat": 4, "fiber": 5},
+  ] 
   export default nutritionData;
   

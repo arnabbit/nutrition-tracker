@@ -49,7 +49,7 @@ class App extends Component {
             />
           ))}
         </div>
-        <Summary meals={meals} standards={nutritionalStandards} />
+        <Summary meals={meals} date={date} standards={nutritionalStandards} />
       </div>
     );
   }
